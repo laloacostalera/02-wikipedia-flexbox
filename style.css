@@ -1,9 +1,6 @@
-:root {
-  --col-background: rgb(255, 250, 242);
-  --col-header: linear-gradient(to bottom, white, rgb(255, 250, 242));
-  --col-main-article: white;
+/* || imported Typography */
 
-}
+/* CSS Reset and Variables at :root */
 
 *{
   margin: 0;
@@ -12,95 +9,121 @@
 
 }
 
-    body {
-      /* width: 95%; */
-      /* max-width: 960px; */
-      /* background-color: var(--col-background); */
-      scroll-behavior: smooth;
-      background-color: white;
-      /* padding: 0.5rem; */
+:root {
+  --col-background: rgb(255, 250, 242);
+  --col-header: linear-gradient(to bottom, white, rgb(255, 250, 242));
+  --col-main-article: white;
+  
+}
+
+/* I need to better order this stylesheet for that I'm going to divide the file into sections with comments and the common string || search for it */
+/* || Header Navigation */
+header {
+  /* display: flex;
+  flex: row; */
+  /* align-items: center;   controla dónde se ubican los elementos flexibles en el eje transversal.
+  justify-content: space-evenly;  controla dónde se ubican los elementos flexibles sobre el eje principal. */
+  
+}
+
+a {
+  /* display: flex; */
+}
+
+.wiki {
+  max-width: 20%;
+  height: auto;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+img.logo {
+  max-width: 80%; */
+  height: auto;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+/* || External Navigation */
+
+/* || General styles */
+/* by html selectors elements - classes - id */
+body {
+  /* width: 95%; */
+  /* max-width: 960px; */
+  /* background-color: var(--col-background); */
+  scroll-behavior: smooth;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+button {
+  font-size: 18px;
+  border-radius: 2.5rem;
+  line-height: 1.5;
+  padding: 1rem
+
     }
 
-    button {
-      font-size: 18px;
-      line-height: 1.5;
-      justify-items: flex-start;
-    }
 
-    header {
-    background: var(--col-header);
-    height: 100px;
-    }
+h1 {
+border-bottom: 0.5px solid black;
+font-family: 'Times New Roman', Times, serif;
+font-size: 2rem;
+text-align: left;
+line-height: 100px;
+margin: 0;
+}
 
-    h1 {
-    border-bottom: 0.5px solid black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    text-align: left;
-    line-height: 100px;
-    margin: 0;
-    }
+h2 {
+border-bottom: 0.5px solid black;
+line-height: 2rem;
+margin-top: 2rem;
+}
 
-    h2 {
-    border-bottom: 0.5px solid black;
-    line-height: 2rem;
-    margin-top: 2rem;
-    }
+p {
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  padding-bottom: 1rem;
+  padding: 1rem;
+}
 
-    p {
-      line-height: 1.5;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: justify;
-      padding-bottom: 1rem;
-      padding: 1rem;
-    }
-
-    li {
-      text-indent: 10px;
-      list-style-position: inside;
-      padding: 5px;
-    }
-
+li {
+  text-indent: 10px;
+  list-style-position: inside;
+  padding: 5px;
+}
+    
     .panel ul {
       list-style: none;
-    
+      
     }
-
+    
     ul {
       list-style-type: circle;
       line-height: 1.5;
       text-align: justify;
     }
-
+    
     a {
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
-
+    
     table {
       text-align: left;
       margin: 0.5rem;
       padding: 0.5rem;
     }
-    .Your-Father {
-      /* //elemento padre del artículo */
-      background-color: var(--col-background) ;
-    }
-    .toolbox {
-      height: 100px;
-      display: flex;
-      align-items: center;   /*controla dónde se ubican los elementos flexibles en el eje transversal.*/
-      justify-content: space-around;  /*controla dónde se ubican los elementos flexibles sobre el eje principal.*/
-      margin: 1rem;
-      padding: 1rem;
-    }
     
     .nosplit {
       white-space: nowrap;
     }
-
+    /* ||| General styles: Table */
+    
     .boxes {
       width:fit-content;
       background-color: var(--col-background);
@@ -109,33 +132,35 @@
       margin: 10px;
       padding: 10px;
     }
-
+    
     .block {
       min-width: 20vw;
       float: right;
       margin-left: 2rem;
     }
-
-
+    
+    
     div.block {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
+    
+  
+  /* ||| General styles: main section */
+  
+  .Your-Father {
+    /* //elemento padre del artículo */
+    background-color: var(--col-background) ;
+  }
 
-    .wiki {
-      display:block;
-      min-width: 120%;
-      height: auto;
-      padding: 1.5rem;
-    }
 
-    img.logo {
-      max-width: 80%;
-      height: auto;
-      margin: 1rem auto;
-      padding: 1rem;
-    }
+/* || footer */
+
+/* || Responsive design */
+
+    
+
     /* EL MODELO FLEXIBLE: cuando los elementos se presentan como cajas flexibles se distribuyen con respecto de dos ejes el main axis y el cross axis.                 cross start
     inicio del eje transversal
     
