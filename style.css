@@ -26,7 +26,7 @@
   align-items: center;
   /* controla dónde se ubican los elementos flexibles en el eje transversal. */
   justify-content: space-evenly; 
-   /* controla dónde se ubican los elementos flexibles sobre el eje principal. */ */
+   /* controla dónde se ubican los elementos flexibles sobre el eje principal. */
   margin: 1rem auto;
   padding: auto 1rem;
 }
@@ -39,11 +39,11 @@
 /* .topbox img {
   border: 2px solid green;
   margin 2rem;
-  padding: 1.5rem; */
-}
+  padding: 1.5rem; 
+}*/
 
 .topbox div{
-  margin 2rem;
+  margin: 2rem;
   padding: 1.5rem;
 }
 
