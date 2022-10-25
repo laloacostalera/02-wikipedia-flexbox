@@ -17,28 +17,54 @@
 }
 
 /* I need to better order this stylesheet for that I'm going to divide the file into sections with comments and the common string || search for it */
+
 /* || Header Navigation */
-header {
-  /* display: flex;
-  flex: row; */
-  /* align-items: center;   controla dónde se ubican los elementos flexibles en el eje transversal.
-  justify-content: space-evenly;  controla dónde se ubican los elementos flexibles sobre el eje principal. */
-  
+.topbox {
+  display: flex;
+  flex: 0 0 auto;
+  border: 2px solid purple;
+  align-items: center;
+  /* controla dónde se ubican los elementos flexibles en el eje transversal. */
+  justify-content: space-evenly; 
+   /* controla dónde se ubican los elementos flexibles sobre el eje principal. */ */
+  margin: 1rem auto;
+  padding: auto 1rem;
+}
+
+.topbox header{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .topbox img {
+  border: 2px solid green;
+  margin 2rem;
+  padding: 1.5rem; */
+}
+
+.topbox div{
+  margin 2rem;
+  padding: 1.5rem;
+}
+
+.topbox nav {
+  display: flex;
+  flex: 0 0 auto;
+  border: 2px solid green;
+  background-color: green;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
 }
 
 a {
-  /* display: flex; */
+  display: flex;
+  align-items: flex-end;
 }
 
-.wiki {
-  max-width: 20%;
-  height: auto;
-  margin: 1rem auto;
-  padding: 1rem;
-}
 
 img.logo {
-  max-width: 80%; */
+  max-width: 80%;
   height: auto;
   margin: 1rem auto;
   padding: 1rem;
